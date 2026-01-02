@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Test de Criminalidad Socioeconómica</title>
+  <style>
+  body { font-family: Arial, sans-serif; margin: 10px; background: #f9f9f9; }
+  h1 { font-size: 1.3em; }
+  .question { margin-bottom: 16px; padding: 12px; border-radius: 8px; background: #fff; border: 2px solid #ccc; }
+  .question.correct { border-color: #2ecc71; }
+  .question.incorrect { border-color: #e74c3c; }
+  .options label { display: block; padding: 6px 0; }
+  .explanation { display: none; margin-top: 8px; font-size: 0.9em; color: #333; }
+  button { padding: 10px 14px; font-size: 1em; border-radius: 6px; border: none; background: #2c3e50; color: #fff; }
+  #result { font-weight: bold; margin-top: 12px; }
+  @media (max-width: 600px) {
+    body { font-size: 1em; }
+    button { width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Criminalidad Socioeconómica y Delincuencia de Cuello Blanco</h1>
+<p>Selecciona una respuesta en cada pregunta y pulsa <strong>Comprobar todo</strong> para obtener tu nota.</p>
+
+<div id="test">
+  <div class="question" data-correct="b">
+    <p><strong>1. Según Tombs y Whyte, la delincuencia socioeconómica comprende principalmente:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q1" value="a"> Robos violentos y delitos callejeros</label><br>
+      <label><input type="radio" name="q1" value="b"> Robos y estafas corporativas, delitos contra trabajadores, consumidores y el medio ambiente</label><br>
+      <label><input type="radio" name="q1" value="c"> Exclusivamente delitos fiscales y financieros</label><br>
+    </div>
+    <div class="explanation">Tombs y Whyte conciben la delincuencia socioeconómica de forma amplia, incluyendo el daño social generado por empresas contra trabajadores, consumidores y el medio ambiente.</div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p><strong>2. Para Newburn, la delincuencia de cuello blanco se define como:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q2" value="a"> Delitos cometidos por cualquier persona</label><br>
+      <label><input type="radio" name="q2" value="b"> Delitos cometidos por personas de alto estatus, en nombre de organizaciones y contra organizaciones</label><br>
+      <label><input type="radio" name="q2" value="c"> Delitos cometidos únicamente contra el Estado</label><br>
+    </div>
+    <div class="explanation">Newburn subraya el estatus del autor y el contexto organizativo como elementos centrales de la delincuencia de cuello blanco.</div>
+  </div>
+
+  <div class="question" data-correct="c">
+    <p><strong>3. La victimización en los delitos de cuello blanco se caracteriza por ser:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q3" value="a"> Directa y personal</label><br>
+      <label><input type="radio" name="q3" value="b"> Violenta y visible</label><br>
+      <label><input type="radio" name="q3" value="c"> Difusa y no directa</label><br>
+    </div>
+    <div class="explanation">Las víctimas suelen ser colectivas o institucionales, lo que dificulta la percepción del daño.</div>
+  </div>
+  <div class="question" data-correct="b">
+    <p><strong>4. ¿El hurto es un delito socioeconómico?</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q4" value="a"> Sí, siempre</label>
+      <label><input type="radio" name="q4" value="b"> No, es un delito patrimonial clásico</label>
+      <label><input type="radio" name="q4" value="c"> Solo si lo comete una empresa</label>
+    </div>
+    <div class="explanation">El hurto protege el patrimonio individual y no bienes supraindividuales como el mercado o la confianza económica, por lo que no es un delito socioeconómico.</div>
+  </div>
+
+  <div class="question" data-correct="c">
+    <p><strong>5. La responsabilidad penal de las personas jurídicas se aplica:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q5" value="a"> A todos los delitos tipificados en el Código Penal</label>
+      <label><input type="radio" name="q5" value="b"> Solo a los delitos del Título XIII del Código Penal</label>
+      <label><input type="radio" name="q5" value="c"> Solo a los delitos para los que la ley lo prevea expresamente</label>
+    </div>
+    <div class="explanation">La responsabilidad penal de la persona jurídica es de aplicación tasada: solo procede en los delitos en los que el Código Penal lo establece expresamente.</div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p><strong>6. La LO 5/2010 introdujo en el Derecho penal español:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q6" value="a"> La supresión de la responsabilidad penal empresarial</label>
+      <label><input type="radio" name="q6" value="b"> El concepto de persona jurídica criminalmente responsable</label>
+      <label><input type="radio" name="q6" value="c"> La exclusividad de la multa como pena</label>
+    </div>
+    <div class="explanation">La LO 5/2010 introdujo por primera vez en España la responsabilidad penal de las personas jurídicas, rompiendo con el principio societas delinquere non potest.</div>
+  </div>
+
+  <div class="question" data-correct="c">
+    <p><strong>7. En la responsabilidad penal de las personas jurídicas, la pena de multa:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q7" value="a"> Es siempre obligatoria</label>
+      <label><input type="radio" name="q7" value="b"> Nunca puede imponerse</label>
+      <label><input type="radio" name="q7" value="c"> Es la pena central, pero no necesariamente la única ni obligatoria</label>
+    </div>
+    <div class="explanation">La multa es la pena principal para las personas jurídicas, pero el Código Penal prevé también otras penas como la disolución, suspensión o intervención judicial.</div>
+  </div>
+</div>
+
+  <div class="question" data-correct="b">
+    <p><strong>8. En relación con la edad y el sexo en la delincuencia de cuello blanco:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q8" value="a"> Las mujeres cometen más delitos de cuello blanco que los hombres</label>
+      <label><input type="radio" name="q8" value="b"> Las mujeres tienden a cometer delitos de cuello blanco en menor medida que los hombres</label>
+      <label><input type="radio" name="q8" value="c"> No existen diferencias por sexo</label>
+    </div>
+    <div class="explanation">La DCB presenta una marcada masculinización, explicada por el acceso desigual a posiciones de poder económico y organizativo.</div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p><strong>9. Según el estudio de Blickle, los delincuentes de cuello blanco encarcelados son:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q9" value="a"> Menos hedonistas y menos narcisistas</label>
+      <label><input type="radio" name="q9" value="b"> Más hedonistas y más narcisistas</label>
+      <label><input type="radio" name="q9" value="c"> Clínicamente psicópatas</label>
+    </div>
+    <div class="explanation">Los estudios empíricos muestran elevados rasgos subclínicos de hedonismo y narcisismo, sin implicar trastornos mentales graves.</div>
+  </div>
+
+  <div class="question" data-correct="a">
+    <p><strong>10. La teoría que aprueba explícitamente la conducta ilegal y recompensa comportamientos contrarios a la ley es:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q10" value="a"> Teoría de la asociación diferencial</label>
+      <label><input type="radio" name="q10" value="b"> Teoría del autocontrol</label>
+      <label><input type="radio" name="q10" value="c"> Teoría de la anomia estructural</label>
+    </div>
+    <div class="explanation">En determinados contextos organizativos se aprenden y refuerzan definiciones favorables a la infracción de la ley.</div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p><strong>11. La teoría directamente relacionada con el autocontrol es:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q11" value="a"> Teoría de la frustración</label>
+      <label><input type="radio" name="q11" value="b"> Teoría general de la delincuencia</label>
+      <label><input type="radio" name="q11" value="c"> Teoría del etiquetado</label>
+    </div>
+    <div class="explanation">La teoría general de la delincuencia atribuye el delito a un bajo autocontrol estable en el individuo.</div>
+  </div>
+
+  <div class="question" data-correct="c">
+    <p><strong>12. Cuando el autor minimiza o niega el perjuicio causado está utilizando la técnica de:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q12" value="a"> Negación de la víctima</label>
+      <label><input type="radio" name="q12" value="b"> Condena a los condenadores</label>
+      <label><input type="radio" name="q12" value="c"> Negación del daño</label>
+    </div>
+    <div class="explanation">La negación del daño permite al infractor reducir la culpa al considerar que no existe un perjuicio real.</div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p><strong>13. En la teoría de las actividades cotidianas, el guardián:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q13" value="a"> Supervisa al infractor</label>
+      <label><input type="radio" name="q13" value="b"> Protege a los objetivos</label>
+      <label><input type="radio" name="q13" value="c"> Gestiona el lugar</label>
+    </div>
+    <div class="explanation">El guardián es cualquier persona, medida o mecanismo que reduce la vulnerabilidad del objetivo frente al delito.</div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p><strong>14. Los delitos, incluidos los de cuello blanco, tienen mayor probabilidad de producirse cuando:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q14" value="a"> Existen fuertes sanciones penales</label>
+      <label><input type="radio" name="q14" value="b"> Son fáciles de cometer, el riesgo es bajo y la recompensa atractiva</label>
+      <label><input type="radio" name="q14" value="c"> Hay un elevado control informal</label>
+    </div>
+    <div class="explanation">La elección racional muestra que el delito surge cuando el balance coste-beneficio es favorable al infractor.</div>
+  </div>
+
+  <div class="question" data-correct="c">
+    <p><strong>15. La prevención situacional sostiene que los individuos deciden delinquir en función de:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q15" value="a"> Rasgos patológicos</label>
+      <label><input type="radio" name="q15" value="b"> Socialización infantil</label>
+      <label><input type="radio" name="q15" value="c"> Características específicas de la oportunidad delictiva</label>
+    </div>
+    <div class="explanation">La prevención situacional se centra en modificar oportunidades, no personas.</div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p><strong>16. En prevención situacional, la afirmación correcta es:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q16" value="a"> Lo esencial es reducir riesgos y recompensas</label>
+      <label><input type="radio" name="q16" value="b"> Lo clave es aumentar el esfuerzo y eliminar excusas</label>
+      <label><input type="radio" name="q16" value="c"> Solo importa aumentar sanciones penales</label>
+    </div>
+    <div class="explanation">Las estrategias más eficaces actúan sobre esfuerzo y excusas, no solo sobre sanción.</div>
+  </div>
+
+  <div class="question" data-correct="c">
+    <p><strong>17. El objetivo central del programa de ética es:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q17" value="a"> Evitar sanciones judiciales</label>
+      <label><input type="radio" name="q17" value="b"> Aumentar la productividad</label>
+      <label><input type="radio" name="q17" value="c"> Crear un clima organizativo orientado a valores</label>
+    </div>
+    <div class="explanation">El programa ético busca internalizar valores y reducir la neutralización del delito.</div>
+  </div>
+
+  <div class="question" data-correct="a">
+    <p><strong>18. Según el art. 31 bis.5 CP, entre las obligaciones del modelo de prevención destaca:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q18" value="a"> La obligación de informar o denunciar irregularidades</label>
+      <label><input type="radio" name="q18" value="b"> La externalización total del control</label>
+      <label><input type="radio" name="q18" value="c"> La supresión de auditorías internas</label>
+    </div>
+    <div class="explanation">Los canales de denuncia son pieza clave del sistema de cumplimiento.</div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p><strong>19. El principio “too big to fail” significa que:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q19" value="a"> Las grandes empresas delinquen más</label>
+      <label><input type="radio" name="q19" value="b"> Las grandes organizaciones no pueden colapsar por su impacto sistémico</label>
+      <label><input type="radio" name="q19" value="c"> Las empresas solo responden civilmente</label>
+    </div>
+    <div class="explanation">El concepto alude al riesgo sistémico: la quiebra o sanción extrema de grandes organizaciones puede afectar a la estabilidad económica y política, condicionando la respuesta penal.</div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p><strong>20. Uno de los motivos de la escasez de condenas penales en la delincuencia de cuello blanco es:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q20" value="a"> La inexistencia de leyes aplicables</label>
+      <label><input type="radio" name="q20" value="b"> Los acuerdos de enjuiciamiento diferido</label>
+      <label><input type="radio" name="q20" value="c"> La ausencia de víctimas</label>
+    </div>
+    <div class="explanation">Los acuerdos de enjuiciamiento diferido priorizan sanciones económicas y compromisos de cumplimiento para evitar efectos sistémicos negativos.</div>
+  </div>
+
+  <div class="question" data-correct="c">
+    <p><strong>21. Algunos autores sostienen que los delitos patrimoniales:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q21" value="a"> Causan menos pérdidas que los delitos callejeros</label>
+      <label><input type="radio" name="q21" value="b"> Son irrelevantes económicamente</label>
+      <label><input type="radio" name="q21" value="c"> Pueden causar más pérdidas que la delincuencia callejera</label>
+    </div>
+    <div class="explanation">La delincuencia económica y patrimonial puede generar daños agregados muy superiores a la delincuencia común, pese a recibir menor atención penal.</div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p><strong>22. ¿Cuándo NO se impone responsabilidad penal a la persona jurídica?</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q22" value="a"> Cuando el delito lo comete un directivo</label>
+      <label><input type="radio" name="q22" value="b"> Cuando existió una supervisión adecuada y eficaz</label>
+      <label><input type="radio" name="q22" value="c"> Cuando existe beneficio indirecto</label>
+    </div>
+    <div class="explanation">Si la empresa cuenta con un modelo de prevención eficaz y el delito se comete eludiendo fraudulentamente los controles, se excluye la responsabilidad penal.</div>
+  </div>
+
+  <div class="question" data-correct="a">
+    <p><strong>23. La estrategia preventiva destinada a evitar situaciones criminógenas se denomina:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q23" value="a"> Reducir provocaciones</label>
+      <label><input type="radio" name="q23" value="b"> Aumentar recompensas</label>
+      <label><input type="radio" name="q23" value="c"> Neutralizar sanciones</label>
+    </div>
+    <div class="explanation">Reducir provocaciones implica eliminar presiones y factores situacionales que incrementan la probabilidad de delito (metas irreales, incentivos agresivos).</div>
+    <div class="question" data-correct="b">
+    <p><strong>24. En el perfil del delincuente de cuello blanco, la edad suele ser mayor porque:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q24" value="a"> El delito requiere impulsividad</label>
+      <label><input type="radio" name="q24" value="b"> Se necesita trayectoria profesional y acceso a oportunidades</label>
+      <label><input type="radio" name="q24" value="c"> Disminuye el control social</label>
+    </div>
+    <div class="explanation">La DCB exige acceso a posiciones de poder, información y confianza, lo que suele alcanzarse tras una carrera profesional prolongada.</div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p><strong>25. La asociación diferencial aplicada a la delincuencia corporativa destaca:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q25" value="a"> Factores genéticos</label>
+      <label><input type="radio" name="q25" value="b"> La cultura organizativa y el aprendizaje interno</label>
+      <label><input type="radio" name="q25" value="c"> El castigo penal severo</label>
+    </div>
+    <div class="explanation">En contextos corporativos se aprenden y legitiman prácticas ilegales mediante normas y recompensas informales.</div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p><strong>26. La teoría general de la delincuencia explica el delito por:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q26" value="a"> Desigualdad estructural</label>
+      <label><input type="radio" name="q26" value="b"> Bajo autocontrol estable</label>
+      <label><input type="radio" name="q26" value="c"> Etiquetado social</label>
+    </div>
+    <div class="explanation">Gottfredson y Hirschi sostienen que el bajo autocontrol explica múltiples formas de delincuencia, incluida la económica.</div>
+  </div>
+
+  <div class="question" data-correct="c">
+    <p><strong>27. La teoría general de la frustración de Agnew amplía a Merton al incluir:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q27" value="a"> Solo tensiones económicas</label>
+      <label><input type="radio" name="q27" value="b"> Exclusivamente clases bajas</label>
+      <label><input type="radio" name="q27" value="c"> Tensiones subjetivas y emociones negativas</label>
+    </div>
+    <div class="explanation">Agnew incorpora la percepción de injusticia y emociones como ira o frustración como detonantes del delito.</div>
+  </div>
+
+  <div class="question" data-correct="a">
+    <p><strong>28. Las técnicas de neutralización operan principalmente:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q28" value="a"> Antes y después del delito</label>
+      <label><input type="radio" name="q28" value="b"> Solo durante el juicio</label>
+      <label><input type="radio" name="q28" value="c"> Tras la condena</label>
+    </div>
+    <div class="explanation">Permiten reducir la culpa y mantener una autoimagen positiva antes y después de cometer el delito.</div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p><strong>29. La negación de la víctima es más frecuente cuando:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q29" value="a"> Existe contacto físico</label>
+      <label><input type="radio" name="q29" value="b"> La víctima es difusa o institucional</label>
+      <label><input type="radio" name="q29" value="c"> El daño es inmediato</label>
+    </div>
+    <div class="explanation">Cuanto más abstracta es la víctima, más fácil resulta negar su existencia o el daño causado.</div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p><strong>30. La teoría de las actividades cotidianas exige la concurrencia de:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q30" value="a"> Autor, norma y sanción</label>
+      <label><input type="radio" name="q30" value="b"> Infractor motivado, objetivo adecuado y ausencia de control</label>
+      <label><input type="radio" name="q30" value="c"> Pobreza, exclusión y violencia</label>
+    </div>
+    <div class="explanation">El delito surge cuando coinciden esos tres elementos en un mismo espacio-tiempo.</div>
+  </div>
+
+</div>
+
+  <div class="question" data-correct="b">
+    <p><strong>31. En la delincuencia de cuello blanco, el "lugar" suele entenderse como:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q31" value="a"> Un espacio físico concreto</label>
+      <label><input type="radio" name="q31" value="b"> Un proceso administrativo, financiero o digital</label>
+      <label><input type="radio" name="q31" value="c"> La vía pública</label>
+    </div>
+    <div class="explanation">En la DCB el delito se comete en procesos organizativos y flujos de información, no en espacios físicos tradicionales.</div>
+  </div>
+
+  <div class="question" data-correct="c">
+    <p><strong>32. El gestor del lugar, según la criminología ambiental, tiene como función principal:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q32" value="a"> Castigar al infractor</label>
+      <label><input type="radio" name="q32" value="b"> Proteger directamente a la víctima</label>
+      <label><input type="radio" name="q32" value="c"> Mantener el entorno bajo control</label>
+    </div>
+    <div class="explanation">El gestor del lugar controla procesos y contextos para reducir oportunidades delictivas.</div>
+  </div>
+
+  <div class="question" data-correct="a">
+    <p><strong>33. El triángulo del fraude está compuesto por:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q33" value="a"> Oportunidad, presión y racionalización</label>
+      <label><input type="radio" name="q33" value="b"> Violencia, anonimato y beneficio</label>
+      <label><input type="radio" name="q33" value="c"> Autor, víctima y juez</label>
+    </div>
+    <div class="explanation">Este modelo explica la decisión de delinquir combinando factores situacionales y cognitivos.</div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p><strong>34. La Crime Pattern Theory aporta a la criminología:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q34" value="a"> El estudio de la personalidad criminal</label>
+      <label><input type="radio" name="q34" value="b"> Los conceptos de nodos, rutas y bordes</label>
+      <label><input type="radio" name="q34" value="c"> La teoría del etiquetado</label>
+    </div>
+    <div class="explanation">Esta teoría analiza cómo las rutinas y trayectorias crean oportunidades para el delito.</div>
+  </div>
+
+  <div class="question" data-correct="a">
+    <p><strong>35. En una organización, un "borde" criminógeno se define como:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q35" value="a"> Zona con controles débiles o difusos</label>
+      <label><input type="radio" name="q35" value="b"> Área de máxima seguridad</label>
+      <label><input type="radio" name="q35" value="c"> El órgano directivo</label>
+    </div>
+    <div class="explanation">Los bordes son interfaces vulnerables entre departamentos o sistemas.</div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p><strong>36. El enfoque de Crime Science se caracteriza por:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q36" value="a"> Explicaciones generales del delito</label>
+      <label><input type="radio" name="q36" value="b"> Alta especificidad del problema criminal</label>
+      <label><input type="radio" name="q36" value="c"> Análisis exclusivo de la personalidad</label>
+    </div>
+    <div class="explanation">Crime Science busca soluciones prácticas para problemas delictivos concretos.</div>
+  </div>
+
+  <div class="question" data-correct="a">
+    <p><strong>37. La prevención situacional se apoya teóricamente en:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q37" value="a"> La teoría de la elección racional</label>
+      <label><input type="radio" name="q37" value="b"> El determinismo biológico</label>
+      <label><input type="radio" name="q37" value="c"> La teoría del etiquetado</label>
+    </div>
+    <div class="explanation">Parte de que el infractor evalúa costes, beneficios y riesgos antes de delinquir.</div>
+  </div>
+
+  <div class="question" data-correct="c">
+    <p><strong>38. En delincuencia económica, aumentar el esfuerzo para delinquir suele implicar:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q38" value="a"> Endurecer las penas</label>
+      <label><input type="radio" name="q38" value="b"> Incrementar la vigilancia policial</label>
+      <label><input type="radio" name="q38" value="c"> Segregación de funciones y controles internos</label>
+    </div>
+    <div class="explanation">Las barreras en DCB son organizativas y procedimentales, no físicas.</div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p><strong>39. Publicitar las medidas de control tiene como objetivo principal:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q39" value="a"> Mejorar la imagen corporativa</label>
+      <label><input type="radio" name="q39" value="b"> Incrementar el riesgo percibido de detección</label>
+      <label><input type="radio" name="q39" value="c"> Eliminar incentivos económicos</label>
+    </div>
+    <div class="explanation">La disuasión depende más del riesgo percibido que del riesgo real.</div>
+  </div>
+
+  <div class="question" data-correct="a">
+    <p><strong>40. Reducir recompensas en prevención situacional significa:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q40" value="a"> Limitar los beneficios obtenidos del delito</label>
+      <label><input type="radio" name="q40" value="b"> Eliminar controles internos</label>
+      <label><input type="radio" name="q40" value="c"> Incrementar incentivos</label>
+    </div>
+    <div class="explanation">Reducir la rentabilidad del delito es clave frente a infractores racionales.</div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p><strong>41. Las provocaciones situacionales incluyen:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q41" value="a"> Auditorías externas</label>
+      <label><input type="radio" name="q41" value="b"> Metas irreales y presión excesiva</label>
+      <label><input type="radio" name="q41" value="c"> Canales de denuncia</label>
+    </div>
+    <div class="explanation">Objetivos inalcanzables generan tensiones criminógenas.</div>
+  </div>
+
+  <div class="question" data-correct="c">
+    <p><strong>42. Eliminar excusas tiene como finalidad:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q42" value="a"> Aumentar beneficios</label>
+      <label><input type="radio" name="q42" value="b"> Reducir sanciones</label>
+      <label><input type="radio" name="q42" value="c"> Neutralizar racionalizaciones morales</label>
+    </div>
+    <div class="explanation">Busca impedir justificaciones como “todos lo hacen”.</div>
+  </div>
+
+  <div class="question" data-correct="c">
+    <p><strong>43. El programa de ética se diferencia del compliance porque:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q43" value="a"> Solo busca evitar sanciones</label>
+      <label><input type="radio" name="q43" value="b"> Se centra únicamente en normas legales</label>
+      <label><input type="radio" name="q43" value="c"> Persigue un cambio cultural basado en valores</label>
+    </div>
+    <div class="explanation">Va más allá del cumplimiento formal y trabaja la cultura organizativa.</div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p><strong>44. El compliance penal tiene como función principal:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q44" value="a"> Sustituir al Derecho penal</label>
+      <label><input type="radio" name="q44" value="b"> Prevenir riesgos penales en la organización</label>
+      <label><input type="radio" name="q44" value="c"> Eliminar siempre la responsabilidad</label>
+    </div>
+    <div class="explanation">Su finalidad es preventiva, no eximente automática.</div>
+  </div>
+
+  <div class="question" data-correct="a">
+    <p><strong>45. Se considera compliance "de papel" cuando:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q45" value="a"> Existe solo formalmente, sin aplicación real</label>
+      <label><input type="radio" name="q45" value="b"> Está externalizado</label>
+      <label><input type="radio" name="q45" value="c"> Tiene órgano autónomo</label>
+    </div>
+    <div class="explanation">Sin implantación efectiva no produce efectos jurídicos.</div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p><strong>46. Para la exención total por compliance es necesario que:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q46" value="a"> El delito sea leve</label>
+      <label><input type="radio" name="q46" value="b"> El autor eluda fraudulentamente los controles</label>
+      <label><input type="radio" name="q46" value="c"> No exista beneficio</label>
+    </div>
+    <div class="explanation">Si el fallo es organizativo, no hay exención.</div>
+  </div>
+
+  <div class="question" data-correct="a">
+    <p><strong>47. La multa proporcional se caracteriza por:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q47" value="a"> Vincularse al beneficio o daño causado</label>
+      <label><input type="radio" name="q47" value="b"> Depender del número de socios</label>
+      <label><input type="radio" name="q47" value="c"> Ser siempre inferior a la multa por cuotas</label>
+    </div>
+    <div class="explanation">Busca impactar directamente en la rentabilidad del delito.</div>
+  </div>
+
+  <div class="question" data-correct="c">
+    <p><strong>48. La intervención judicial de la persona jurídica persigue:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q48" value="a"> Castigar a los directivos</label>
+      <label><input type="radio" name="q48" value="b"> Sustituir a la empresa</label>
+      <label><input type="radio" name="q48" value="c"> Proteger a trabajadores y terceros</label>
+    </div>
+    <div class="explanation">Es una medida organizativa orientada a la protección de terceros.</div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p><strong>49. El delito continuado es frecuente en la delincuencia económica porque:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q49" value="a"> Los actos son aislados</label>
+      <label><input type="radio" name="q49" value="b"> Existe un plan único con actos homogéneos</label>
+      <label><input type="radio" name="q49" value="c"> No hay planificación</label>
+    </div>
+    <div class="explanation">Las conductas se repiten dentro de una misma estrategia empresarial.</div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p><strong>50. La elevada cifra negra en la delincuencia de cuello blanco se debe principalmente a:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q50" value="a"> Falta de tipificación</label>
+      <label><input type="radio" name="q50" value="b"> Dificultad de detección y apariencia de legalidad</label>
+      <label><input type="radio" name="q50" value="c"> Escasa gravedad</label>
+    </div>
+    <div class="explanation">La complejidad técnica y la apariencia legal ocultan estas conductas.</div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p><strong>51. La responsabilidad penal de la persona jurídica se fundamenta en:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q51" value="a"> La culpa objetiva</label>
+      <label><input type="radio" name="q51" value="b"> Un defecto de organización</label>
+      <label><input type="radio" name="q51" value="c"> La mera obtención de beneficio</label>
+    </div>
+    <div class="explanation">El modelo español se basa en la idea de fallo organizativo o ausencia de controles adecuados.</div>
+  </div>
+
+  <div class="question" data-correct="c">
+    <p><strong>52. El art. 31 bis CP exige para imputar a la persona jurídica:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q52" value="a"> Daño efectivo al mercado</label>
+      <label><input type="radio" name="q52" value="b"> Condena previa de la persona física</label>
+      <label><input type="radio" name="q52" value="c"> Beneficio directo o indirecto</label>
+    </div>
+    <div class="explanation">El beneficio actúa como nexo entre el delito y la organización.</div>
+  </div>
+
+  <div class="question" data-correct="a">
+    <p><strong>53. En la vía delictiva de directivos, la persona jurídica responde cuando:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q53" value="a"> El delito se comete en su nombre y beneficio</label>
+      <label><input type="radio" name="q53" value="b"> No existía ningún programa de compliance</label>
+      <label><input type="radio" name="q53" value="c"> El daño es especialmente grave</label>
+    </div>
+    <div class="explanation">La conducta del directivo se identifica funcionalmente con la organización.</div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p><strong>54. En la vía delictiva de subordinados es clave:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q54" value="a"> El dolo directo</label>
+      <label><input type="radio" name="q54" value="b"> La falta grave de supervisión</label>
+      <label><input type="radio" name="q54" value="c"> La reiteración delictiva</label>
+    </div>
+    <div class="explanation">La responsabilidad surge por fallos relevantes de control y vigilancia.</div>
+  </div>
+
+  <div class="question" data-correct="c">
+    <p><strong>55. La autoría mediata en organizaciones se explica porque:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q55" value="a"> El autor ejecuta materialmente el delito</label>
+      <label><input type="radio" name="q55" value="b"> El subordinado actúa libremente</label>
+      <label><input type="radio" name="q55" value="c"> El poder de organización sustituye a la coacción</label>
+    </div>
+    <div class="explanation">El dominio del hecho se ejerce a través de la estructura organizativa.</div>
+  </div>
+
+  <div class="question" data-correct="a">
+    <p><strong>56. El dolo eventual en delitos económicos se refiere a:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q56" value="a"> Aceptar la posibilidad del resultado dañino</label>
+      <label><input type="radio" name="q56" value="b"> Ignorar totalmente el riesgo</label>
+      <label><input type="radio" name="q56" value="c"> Confiar razonablemente en evitar el daño</label>
+    </div>
+    <div class="explanation">El autor prevé el resultado y lo asume como posible.</div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p><strong>57. La imprudencia grave en el ámbito corporativo se relaciona con:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q57" value="a"> La mera desorganización leve</label>
+      <label><input type="radio" name="q57" value="b"> La omisión de controles esenciales</label>
+      <label><input type="radio" name="q57" value="c"> El error invencible</label>
+    </div>
+    <div class="explanation">Supone una infracción grave del deber de cuidado organizativo.</div>
+  </div>
+
+  <div class="question" data-correct="c">
+    <p><strong>58. El concurso real en delincuencia económica implica:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q58" value="a"> Unidad de acción</label>
+      <label><input type="radio" name="q58" value="b"> Aplicación de una sola pena</label>
+      <label><input type="radio" name="q58" value="c"> Pluralidad de hechos y delitos</label>
+    </div>
+    <div class="explanation">Cada hecho conserva su autonomía delictiva.</div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p><strong>59. El delito fiscal se configura como:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q59" value="a"> Delito de resultado estrictamente</label>
+      <label><input type="radio" name="q59" value="b"> Delito de infracción de deber</label>
+      <label><input type="radio" name="q59" value="c"> Delito de peligro abstracto</label>
+    </div>
+    <div class="explanation">Se castiga la vulneración del deber tributario, no solo el daño económico.</div>
+  </div>
+
+  <div class="question" data-correct="a">
+    <p><strong>60. La regularización tributaria relevante penalmente debe ser:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q60" value="a"> Voluntaria y previa a actuaciones administrativas</label>
+      <label><input type="radio" name="q60" value="b"> Posterior al juicio oral</label>
+      <label><input type="radio" name="q60" value="c"> Parcial</label>
+    </div>
+    <div class="explanation">Solo la regularización temprana puede producir efectos eximentes o atenuantes.</div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p><strong>61. El bien jurídico protegido en los delitos socioeconómicos es:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q61" value="a"> El patrimonio individual</label>
+      <label><input type="radio" name="q61" value="b"> El orden socioeconómico</label>
+      <label><input type="radio" name="q61" value="c"> El honor</label>
+    </div>
+    <div class="explanation">Se trata de bienes supraindividuales vinculados al mercado y la confianza económica.</div>
+  </div>
+
+  <div class="question" data-correct="c">
+    <p><strong>62. Los delitos de peligro se caracterizan porque:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q62" value="a"> Requieren daño efectivo</label>
+      <label><input type="radio" name="q62" value="b"> Exigen resultado material</label>
+      <label><input type="radio" name="q62" value="c"> Basta la creación de un riesgo relevante</label>
+    </div>
+    <div class="explanation">El Derecho penal actúa de forma anticipada.</div>
+  </div>
+
+  <div class="question" data-correct="a">
+    <p><strong>63. El falseamiento de cuentas se califica como:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q63" value="a"> Delito de peligro concreto</label>
+      <label><input type="radio" name="q63" value="b"> Delito de resultado</label>
+      <label><input type="radio" name="q63" value="c"> Delito imprudente</label>
+    </div>
+    <div class="explanation">Basta generar riesgo real para socios o terceros.</div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p><strong>64. El alzamiento de bienes tutela principalmente:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q64" value="a"> El patrimonio del deudor</label>
+      <label><input type="radio" name="q64" value="b"> El derecho de crédito</label>
+      <label><input type="radio" name="q64" value="c"> El orden público</label>
+    </div>
+    <div class="explanation">Protege la expectativa legítima del acreedor.</div>
+  </div>
+
+  <div class="question" data-correct="a">
+    <p><strong>65. La administración desleal se diferencia de la apropiación indebida porque:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q65" value="a"> No hay apropiación del bien</label>
+      <label><input type="radio" name="q65" value="b"> No existe perjuicio</label>
+      <label><input type="radio" name="q65" value="c"> No hay abuso de funciones</label>
+    </div>
+    <div class="explanation">El perjuicio deriva del abuso del cargo, no de la apropiación.</div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p><strong>66. La estafa societaria se produce cuando:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q66" value="a"> Se engaña a un consumidor</label>
+      <label><input type="radio" name="q66" value="b"> Se engaña en el ámbito societario causando perjuicio</label>
+      <label><input type="radio" name="q66" value="c"> Existe incumplimiento contractual civil</label>
+    </div>
+    <div class="explanation">El engaño se da en relaciones societarias internas.</div>
+  </div>
+
+  <div class="question" data-correct="c">
+    <p><strong>67. El insider trading afecta principalmente a:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q67" value="a"> La Hacienda Pública</label>
+      <label><input type="radio" name="q67" value="b"> Un inversor concreto</label>
+      <label><input type="radio" name="q67" value="c"> La transparencia del mercado</label>
+    </div>
+    <div class="explanation">Daña la igualdad informativa en los mercados financieros.</div>
+  </div>
+
+  <div class="question" data-correct="a">
+    <p><strong>68. El decomiso ampliado pretende:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q68" value="a"> Recuperar beneficios ilícitos no directamente vinculados</label>
+      <label><input type="radio" name="q68" value="b"> Sustituir la pena de prisión</label>
+      <label><input type="radio" name="q68" value="c"> Compensar siempre a la víctima</label>
+    </div>
+    <div class="explanation">Refuerza la neutralización del lucro criminal.</div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p><strong>69. El principio de proporcionalidad en penas económicas busca:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q69" value="a"> Igualdad formal</label>
+      <label><input type="radio" name="q69" value="b"> Impacto real disuasorio</label>
+      <label><input type="radio" name="q69" value="c"> Simplicidad procesal</label>
+    </div>
+    <div class="explanation">La pena debe afectar realmente al infractor económico.</div>
+  </div>
+
+  <div class="question" data-correct="a">
+    <p><strong>70. La globalización incrementa la delincuencia socioeconómica porque:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q70" value="a"> Genera asimetrías regulatorias</label>
+      <label><input type="radio" name="q70" value="b"> Elimina controles</label>
+      <label><input type="radio" name="q70" value="c"> Reduce oportunidades</label>
+    </div>
+    <div class="explanation">Las diferencias normativas facilitan estrategias ilícitas transnacionales.</div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p><strong>71. El modelo español de responsabilidad penal de la persona jurídica se considera:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q71" value="a"> Objetivo puro</label>
+      <label><input type="radio" name="q71" value="b"> Mixto o de autorresponsabilidad</label>
+      <label><input type="radio" name="q71" value="c"> De responsabilidad vicaria estricta</label>
+    </div>
+    <div class="explanation">Se basa en un defecto de organización propio, no solo en el hecho ajeno.</div>
+  </div>
+
+  <div class="question" data-correct="c">
+    <p><strong>72. La principal crítica al modelo de compliance penal es que:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q72" value="a"> Es excesivamente represivo</label>
+      <label><input type="radio" name="q72" value="b"> No tiene respaldo legal</label>
+      <label><input type="radio" name="q72" value="c"> Puede fomentar programas meramente formales</label>
+    </div>
+    <div class="explanation">Existe el riesgo de que el compliance se reduzca a un cumplimiento formal sin eficacia real.</div>
+  </div>
+
+  <div class="question" data-correct="a">
+    <p><strong>73. El órgano de control en compliance debe caracterizarse por:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q73" value="a"> Autonomía e independencia</label>
+      <label><input type="radio" name="q73" value="b"> Dependencia jerárquica</label>
+      <label><input type="radio" name="q73" value="c"> Carácter simbólico</label>
+    </div>
+    <div class="explanation">La independencia garantiza eficacia y credibilidad del sistema.</div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p><strong>74. La atenuante por compliance posterior requiere:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q74" value="a"> Existencia previa del programa</label>
+      <label><input type="radio" name="q74" value="b"> Implantación eficaz tras el delito</label>
+      <label><input type="radio" name="q74" value="c"> Ausencia total de beneficio</label>
+    </div>
+    <div class="explanation">La ley permite valorar positivamente la reacción posterior de la empresa.</div>
+  </div>
+
+  <div class="question" data-correct="c">
+    <p><strong>75. La disolución de la persona jurídica se concibe como:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q75" value="a"> Pena ordinaria</label>
+      <label><input type="radio" name="q75" value="b"> Medida cautelar</label>
+      <label><input type="radio" name="q75" value="c"> Pena de último recurso</label>
+    </div>
+    <div class="explanation">Se reserva para supuestos de extrema gravedad.</div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p><strong>76. La suspensión de actividades como pena busca:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q76" value="a"> Castigo simbólico</label>
+      <label><input type="radio" name="q76" value="b"> Evitar la reiteración delictiva</label>
+      <label><input type="radio" name="q76" value="c"> Sancionar a trabajadores</label>
+    </div>
+    <div class="explanation">Pretende interrumpir contextos organizativos criminógenos.</div>
+  </div>
+
+  <div class="question" data-correct="a">
+    <p><strong>77. El comiso sin condena se justifica por:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q77" value="a"> La ilicitud objetiva del beneficio</label>
+      <label><input type="radio" name="q77" value="b"> La culpabilidad del autor</label>
+      <label><input type="radio" name="q77" value="c"> La reincidencia</label>
+    </div>
+    <div class="explanation">Su finalidad es neutralizar ganancias ilícitas aunque no haya condena penal.</div>
+  </div>
+
+  <div class="question" data-correct="c">
+    <p><strong>78. El principio de intervención mínima implica que:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q78" value="a"> Todo ilícito debe ser penal</label>
+      <label><input type="radio" name="q78" value="b"> El Derecho penal sustituye al administrativo</label>
+      <label><input type="radio" name="q78" value="c"> El Derecho penal es la última ratio</label>
+    </div>
+    <div class="explanation">Solo debe intervenir cuando otros mecanismos sean insuficientes.</div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p><strong>79. Una crítica criminológica a la DCB señala:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q79" value="a"> Excesiva visibilidad mediática</label>
+      <label><input type="radio" name="q79" value="b"> Trato penal más benevolente</label>
+      <label><input type="radio" name="q79" value="c"> Mayor persecución judicial</label>
+    </div>
+    <div class="explanation">Se denuncia un doble rasero frente a la delincuencia común.</div>
+  </div>
+
+  <div class="question" data-correct="a">
+    <p><strong>80. La escasa alarma social frente a la delincuencia de cuello blanco se explica por:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q80" value="a"> Victimización difusa y daño no inmediato</label>
+      <label><input type="radio" name="q80" value="b"> Falta de normas penales</label>
+      <label><input type="radio" name="q80" value="c"> Elevada violencia</label>
+    </div>
+    <div class="explanation">El daño es abstracto, diferido y colectivo.</div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p><strong>81. Los delitos de cuello blanco suelen descubrirse principalmente mediante:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q81" value="a"> Flagrancia</label>
+      <label><input type="radio" name="q81" value="b"> Auditorías e investigaciones internas</label>
+      <label><input type="radio" name="q81" value="c"> Denuncia de la víctima directa</label>
+    </div>
+    <div class="explanation">La detección suele ser técnica y documental.</div>
+  </div>
+
+  <div class="question" data-correct="c">
+    <p><strong>82. El whistleblowing cobra relevancia porque:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q82" value="a"> Sustituye al proceso penal</label>
+      <label><input type="radio" name="q82" value="b"> Elimina la responsabilidad</label>
+      <label><input type="radio" name="q82" value="c"> Reduce la cifra negra</label>
+    </div>
+    <div class="explanation">Facilita la detección de delitos ocultos.</div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p><strong>83. La Directiva europea sobre whistleblowers busca:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q83" value="a"> Castigar a denunciantes</label>
+      <label><input type="radio" name="q83" value="b"> Proteger al informante</label>
+      <label><input type="radio" name="q83" value="c"> Eliminar controles internos</label>
+    </div>
+    <div class="explanation">Garantiza la protección frente a represalias.</div>
+  </div>
+
+  <div class="question" data-correct="a">
+    <p><strong>84. La responsabilidad penal corporativa se relaciona con la política criminal porque:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q84" value="a"> Persigue prevención general y especial</label>
+      <label><input type="radio" name="q84" value="b"> Sustituye la responsabilidad individual</label>
+      <label><input type="radio" name="q84" value="c"> Elimina la culpabilidad</label>
+    </div>
+    <div class="explanation">Pretende disuadir y corregir prácticas organizativas.</div>
+  </div>
+
+  <div class="question" data-correct="c">
+    <p><strong>85. Una política criminal eficaz frente a la DCB debe:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q85" value="a"> Centrarse solo en penas privativas</label>
+      <label><input type="radio" name="q85" value="b"> Evitar sanciones económicas</label>
+      <label><input type="radio" name="q85" value="c"> Combinar prevención, control y sanción</label>
+    </div>
+    <div class="explanation">El fenómeno exige respuestas complejas.</div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p><strong>86. La desigualdad en la aplicación del Derecho penal se observa cuando:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q86" value="a"> Se sanciona toda infracción</label>
+      <label><input type="radio" name="q86" value="b"> La DCB recibe menor reproche</label>
+      <label><input type="radio" name="q86" value="c"> Existe transparencia judicial</label>
+    </div>
+    <div class="explanation">Se habla de selectividad del sistema penal.</div>
+  </div>
+
+  <div class="question" data-correct="a">
+    <p><strong>87. La criminología crítica sostiene que la DCB:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q87" value="a"> Está infracontrolada</label>
+      <label><input type="radio" name="q87" value="b"> Está sobrerrepresentada</label>
+      <label><input type="radio" name="q87" value="c"> Es inexistente</label>
+    </div>
+    <div class="explanation">Denuncia la protección de intereses poderosos.</div>
+  </div>
+
+  <div class="question" data-correct="c">
+    <p><strong>88. El concepto de "justicia negociada" se vincula a:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q88" value="a"> Juicios orales largos</label>
+      <label><input type="radio" name="q88" value="b"> Pena obligatoria</label>
+      <label><input type="radio" name="q88" value="c"> Acuerdos y conformidades</label>
+    </div>
+    <div class="explanation">Busca eficiencia procesal, pero genera críticas.</div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p><strong>89. La pena de multa es especialmente relevante en la DCB porque:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q89" value="a"> Sustituye siempre a la prisión</label>
+      <label><input type="radio" name="q89" value="b"> Afecta directamente al incentivo económico</label>
+      <label><input type="radio" name="q89" value="c"> Carece de efecto preventivo</label>
+    </div>
+    <div class="explanation">Ataca el móvil principal del delito económico.</div>
+  </div>
+
+  <div class="question" data-correct="a">
+    <p><strong>90. La finalidad última del Derecho penal económico es:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q90" value="a"> Proteger el orden socioeconómico</label>
+      <label><input type="radio" name="q90" value="b"> Castigar a las empresas</label>
+      <label><input type="radio" name="q90" value="c"> Recaudar sanciones</label>
+    </div>
+    <div class="explanation">Se tutela la confianza y estabilidad del sistema económico.</div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p><strong>91. En la delincuencia de cuello blanco, el autor suele percibirse a sí mismo como:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q91" value="a"> Un delincuente habitual</label>
+      <label><input type="radio" name="q91" value="b"> Un profesional que ha cometido una irregularidad</label>
+      <label><input type="radio" name="q91" value="c"> Una víctima del sistema</label>
+    </div>
+    <div class="explanation">La autoimagen prosocial se mantiene mediante neutralizaciones.</div>
+  </div>
+
+  <div class="question" data-correct="a">
+    <p><strong>92. La racionalización "todos lo hacen" corresponde a:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q92" value="a"> Normalización de la conducta</label>
+      <label><input type="radio" name="q92" value="b"> Negación del daño</label>
+      <label><input type="radio" name="q92" value="c"> Condena a los condenadores</label>
+    </div>
+    <div class="explanation">La conducta se percibe como aceptable dentro del grupo.</div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p><strong>93. El aprendizaje delictivo en la empresa se produce fundamentalmente mediante:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q93" value="a"> Formación externa</label>
+      <label><input type="radio" name="q93" value="b"> Prácticas informales y recompensas internas</label>
+      <label><input type="radio" name="q93" value="c"> Sanciones disciplinarias</label>
+    </div>
+    <div class="explanation">La socialización organizativa es clave en la DCB.</div>
+  </div>
+
+  <div class="question" data-correct="c">
+    <p><strong>94. La ausencia de violencia física en la DCB provoca:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q94" value="a"> Mayor alarma social</label>
+      <label><input type="radio" name="q94" value="b"> Reacción penal inmediata</label>
+      <label><input type="radio" name="q94" value="c"> Menor percepción de gravedad</label>
+    </div>
+    <div class="explanation">La gravedad se subestima al no existir daño visible inmediato.</div>
+  </div>
+
+  <div class="question" data-correct="a">
+    <p><strong>95. El concepto de "daño social" en la DCB hace referencia a:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q95" value="a"> Impactos colectivos y estructurales</label>
+      <label><input type="radio" name="q95" value="b"> Daños exclusivamente individuales</label>
+      <label><input type="radio" name="q95" value="c"> Lesiones físicas directas</label>
+    </div>
+    <div class="explanation">Supera la visión clásica del daño penal individual.</div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p><strong>96. El uso de sanciones administrativas en DCB se justifica por:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q96" value="a"> Mayor reproche moral</label>
+      <label><input type="radio" name="q96" value="b"> Rapidez y especialización técnica</label>
+      <label><input type="radio" name="q96" value="c"> Sustituir siempre al Derecho penal</label>
+    </div>
+    <div class="explanation">Complementan al Derecho penal en clave de eficacia.</div>
+  </div>
+
+  <div class="question" data-correct="c">
+    <p><strong>97. El principio non bis in idem impide:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q97" value="a"> Sanciones administrativas</label>
+      <label><input type="radio" name="q97" value="b"> Sanción penal</label>
+      <label><input type="radio" name="q97" value="c"> Doble sanción por los mismos hechos</label>
+    </div>
+    <div class="explanation">Evita duplicidad sancionadora por idéntico hecho y fundamento.</div>
+  </div>
+
+  <div class="question" data-correct="a">
+    <p><strong>98. En el ámbito económico, la prueba suele basarse principalmente en:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q98" value="a"> Documentación y peritajes</label>
+      <label><input type="radio" name="q98" value="b"> Testigos presenciales</label>
+      <label><input type="radio" name="q98" value="c"> Confesión del acusado</label>
+    </div>
+    <div class="explanation">La naturaleza técnica del delito determina el tipo de prueba.</div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p><strong>99. La complejidad procesal en DCB provoca:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q99" value="a"> Juicios más rápidos</label>
+      <label><input type="radio" name="q99" value="b"> Procedimientos largos y costosos</label>
+      <label><input type="radio" name="q99" value="c"> Simplificación probatoria</label>
+    </div>
+    <div class="explanation">Influye en la duración y selectividad del castigo.</div>
+  </div>
+
+  <div class="question" data-correct="a">
+    <p><strong>100. La prescripción favorece en mayor medida a:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q100" value="a"> Delitos complejos y ocultos</label>
+      <label><input type="radio" name="q100" value="b"> Delitos flagrantes</label>
+      <label><input type="radio" name="q100" value="c"> Delitos violentos</label>
+    </div>
+    <div class="explanation">La detección tardía beneficia al autor del delito económico.</div>
+  </div>
+
+  <div class="question" data-correct="c">
+    <p><strong>101. El Derecho penal simbólico se caracteriza por:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q101" value="a"> Alta eficacia real</label>
+      <label><input type="radio" name="q101" value="b"> Escasa visibilidad</label>
+      <label><input type="radio" name="q101" value="c"> Función más comunicativa que práctica</label>
+    </div>
+    <div class="explanation">Busca transmitir mensajes más que prevenir efectivamente.</div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p><strong>102. La presión mediática sobre la DCB suele ser:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q102" value="a"> Superior a la delincuencia común</label>
+      <label><input type="radio" name="q102" value="b"> Inferior y selectiva</label>
+      <label><input type="radio" name="q102" value="c"> Inexistente</label>
+    </div>
+    <div class="explanation">El tratamiento mediático es desigual.</div>
+  </div>
+
+  <div class="question" data-correct="a">
+    <p><strong>103. La criminología verde amplía la DCB al incluir:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q103" value="a"> Daños ambientales corporativos</label>
+      <label><input type="radio" name="q103" value="b"> Delitos callejeros</label>
+      <label><input type="radio" name="q103" value="c"> Infracciones leves</label>
+    </div>
+    <div class="explanation">Enfatiza el daño ecológico como forma de criminalidad económica.</div>
+  </div>
+
+  <div class="question" data-correct="c">
+    <p><strong>104. La justicia restaurativa en DCB presenta como límite principal:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q104" value="a"> Falta de víctimas</label>
+      <label><input type="radio" name="q104" value="b"> Exceso de sanción</label>
+      <label><input type="radio" name="q104" value="c"> Dificultad de identificar víctimas concretas</label>
+    </div>
+    <div class="explanation">La victimización es colectiva y difusa.</div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p><strong>105. El concepto de riesgo permitido implica:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q105" value="a"> Ausencia total de control</label>
+      <label><input type="radio" name="q105" value="b"> Tolerancia normativa a ciertos riesgos</label>
+      <label><input type="radio" name="q105" value="c"> Autorización del daño</label>
+    </div>
+    <div class="explanation">No todo riesgo es penalmente relevante.</div>
+  </div>
+
+  <div class="question" data-correct="a">
+    <p><strong>106. El compliance eficaz debe integrarse:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q106" value="a"> En la cultura corporativa</label>
+      <label><input type="radio" name="q106" value="b"> Solo en documentos internos</label>
+      <label><input type="radio" name="q106" value="c"> Exclusivamente en asesoría externa</label>
+    </div>
+    <div class="explanation">La integración cultural es clave para la prevención real.</div>
+  </div>
+
+  <div class="question" data-correct="c">
+    <p><strong>107. La evaluación de riesgos penales debe ser:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q107" value="a"> Puntual y única</label>
+      <label><input type="radio" name="q107" value="b"> Delegada totalmente</label>
+      <label><input type="radio" name="q107" value="c"> Continua y actualizada</label>
+    </div>
+    <div class="explanation">Los riesgos evolucionan con la actividad empresarial.</div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p><strong>108. El mapa de riesgos penales sirve para:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q108" value="a"> Eliminar automáticamente la responsabilidad</label>
+      <label><input type="radio" name="q108" value="b"> Identificar y priorizar riesgos</label>
+      <label><input type="radio" name="q108" value="c"> Sustituir auditorías</label>
+    </div>
+    <div class="explanation">Es una herramienta central del compliance.</div>
+  </div>
+
+  <div class="question" data-correct="a">
+    <p><strong>109. El incentivo económico sigue siendo central en la DCB porque:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q109" value="a"> El beneficio es el principal motor del delito</label>
+      <label><input type="radio" name="q109" value="b"> No existen otros factores</label>
+      <label><input type="radio" name="q109" value="c"> Siempre hay violencia</label>
+    </div>
+    <div class="explanation">El delito responde a cálculos racionales.</div>
+  </div>
+
+  <div class="question" data-correct="c">
+    <p><strong>110. La cooperación internacional es clave en DCB debido a:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q110" value="a"> Simplicidad de los delitos</label>
+      <label><input type="radio" name="q110" value="b"> Ámbito exclusivamente nacional</label>
+      <label><input type="radio" name="q110" value="c"> Carácter transnacional de muchas conductas</label>
+    </div>
+    <div class="explanation">La globalización facilita delitos transfronterizos.</div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p><strong>111. El principio de legalidad en DCB exige:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q111" value="a"> Interpretación extensiva</label>
+      <label><input type="radio" name="q111" value="b"> Tipificación precisa</label>
+      <label><input type="radio" name="q111" value="c"> Aplicación analógica</label>
+    </div>
+    <div class="explanation">Limita el poder punitivo del Estado.</div>
+  </div>
+
+  <div class="question" data-correct="a">
+    <p><strong>112. La imputación objetiva en delitos económicos analiza:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q112" value="a"> Creación y concreción del riesgo</label>
+      <label><input type="radio" name="q112" value="b"> Personalidad del autor</label>
+      <label><input type="radio" name="q112" value="c"> Alarma social</label>
+    </div>
+    <div class="explanation">Evalúa si el riesgo creado es jurídicamente desaprobado.</div>
+  </div>
+
+  <div class="question" data-correct="c">
+    <p><strong>113. En la DCB, la tentativa suele ser poco relevante porque:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q113" value="a"> No existe planificación</label>
+      <label><input type="radio" name="q113" value="b"> Los delitos son violentos</label>
+      <label><input type="radio" name="q113" value="c"> El delito se consuma con facilidad</label>
+    </div>
+    <div class="explanation">Las conductas suelen alcanzar el resultado previsto.</div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p><strong>114. El blanqueo de capitales se vincula a la DCB porque:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q114" value="a"> Siempre es violento</label>
+      <label><input type="radio" name="q114" value="b"> Permite integrar beneficios ilícitos</label>
+      <label><input type="radio" name="q114" value="c"> Carece de dimensión económica</label>
+    </div>
+    <div class="explanation">Oculta el origen ilícito del beneficio.</div>
+  </div>
+
+  <div class="question" data-correct="a">
+    <p><strong>115. El enfoque preventivo frente al blanqueo prioriza:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q115" value="a"> Deberes de control y diligencia</label>
+      <label><input type="radio" name="q115" value="b"> Sanción penal directa</label>
+      <label><input type="radio" name="q115" value="c"> Inacción administrativa</label>
+    </div>
+    <div class="explanation">La prevención es esencial en delitos financieros.</div>
+  </div>
+
+  <div class="question" data-correct="c">
+    <p><strong>116. La responsabilidad penal de la persona jurídica por blanqueo:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q116" value="a"> Está excluida</label>
+      <label><input type="radio" name="q116" value="b"> Es solo administrativa</label>
+      <label><input type="radio" name="q116" value="c"> Está expresamente prevista</label>
+    </div>
+    <div class="explanation">El CP incluye el blanqueo entre los delitos imputables.</div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p><strong>117. La finalidad del decomiso en blanqueo es:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q117" value="a"> Compensar moralmente</label>
+      <label><input type="radio" name="q117" value="b"> Privar del beneficio ilícito</label>
+      <label><input type="radio" name="q117" value="c"> Aumentar la pena de prisión</label>
+    </div>
+    <div class="explanation">Elimina el incentivo económico.</div>
+  </div>
+
+  <div class="question" data-correct="a">
+    <p><strong>118. La cooperación público-privada en DCB es relevante porque:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q118" value="a"> Facilita detección y prevención</label>
+      <label><input type="radio" name="q118" value="b"> Sustituye al juez</label>
+      <label><input type="radio" name="q118" value="c"> Elimina el control estatal</label>
+    </div>
+    <div class="explanation">Las empresas son actores clave en la prevención.</div>
+  </div>
+
+  <div class="question" data-correct="c">
+    <p><strong>119. La tendencia actual en política criminal frente a la DCB es:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q119" value="a"> Despenalización</label>
+      <label><input type="radio" name="q119" value="b"> Exclusión empresarial</label>
+      <label><input type="radio" name="q119" value="c"> Refuerzo preventivo y sancionador</label>
+    </div>
+    <div class="explanation">Se combinan prevención, control y sanción.</div>
+  </div>
+
+  <div class="question" data-correct="a">
+    <p><strong>120. El objetivo final del estudio de la delincuencia de cuello blanco es:</strong></p>
+    <div class="options">
+      <label><input type="radio" name="q120" value="a"> Comprender y reducir el daño social</label>
+      <label><input type="radio" name="q120" value="b"> Incrementar penas</label>
+      <label><input type="radio" name="q120" value="c"> Estigmatizar al infractor</label>
+    </div>
+    <div class="explanation">La criminología busca prevención y reducción del daño.</div>
+  </div>
+
+<button onclick="checkAll()">Comprobar todo</button>Comprobar todo</button>
+
+<h2>Resultado</h2>
+<p id="result"></p>
+
+<script>
+function shuffle(container, selector) {
+  const elements = Array.from(container.querySelectorAll(selector));
+  for (let i = elements.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [elements[i], elements[j]] = [elements[j], elements[i]];
+  }
+  elements.forEach(el => container.appendChild(el));
+}
+
+function shuffleAll() {
+  const test = document.getElementById('test');
+  shuffle(test, '.question');
+  document.querySelectorAll('.options').forEach(opt => shuffle(opt, 'label'));
+}
+
+function checkAll() {
+  const questions = document.querySelectorAll('.question');
+  let correct = 0;
+  let answered = 0;
+
+  questions.forEach(q => {
+    q.classList.remove('correct', 'incorrect');
+    const right = q.dataset.correct;
+    const selected = q.querySelector('input[type="radio"]:checked');
+    const expl = q.querySelector('.explanation');
+    expl.style.display = 'block';
+
+    if (selected) {
+      answered++;
+      if (selected.value === right) {
+        correct++;
+        q.classList.add('correct');
+      } else {
+        q.classList.add('incorrect');
+      }
+    } else {
+      q.classList.add('incorrect');
+    }
+  });
+
+  const total = questions.length;
+  const percentage = ((correct / total) * 100).toFixed(2);
+  document.getElementById('result').textContent =
+    `Aciertos: ${correct}/${total} | Contestadas: ${answered} | Nota final: ${percentage}%`;
+}
+  });
+
+  const total = questions.length;
+  const percentage = ((correct / total) * 100).toFixed(2);
+  document.getElementById('result').textContent =
+    `Aciertos: ${correct} / ${total} | Contestadas: ${answered} | Nota: ${percentage}%`;
+}
+
+shuffleAll();
+</script>
+
+</body>
+</html>
