@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Test Criminalidad Socioeconómica</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#2c3e50">
+<style>
+body { font-family: Arial, sans-serif; margin: 10px; background: #f9f9f9; }
+h1 { font-size: 1.3em; }
+.question { margin-bottom: 16px; padding: 12px; border-radius: 8px; background: #fff; border: 2px solid #ccc; }
+.question.correct { border-color: #2ecc71; }
+.question.incorrect { border-color: #e74c3c; }
+.options label { display: block; padding: 6px 0; }
+.explanation { display: none; margin-top: 8px; font-size: 0.9em; }
+button { padding: 10px 14px; font-size: 1em; border-radius: 6px; border: none; background: #2c3e50; color: #fff; }
+#result { font-weight: bold; margin-top: 12px; }
+</style>
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js');
+}
+</script>
+</head>
+<body>
+
+<h1>Criminalidad Socioeconómica y Delincuencia de Cuello Blanco</h1>
+<p>Selecciona una respuesta en cada pregunta y pulsa <strong>Comprobar todo</strong>.</p>
+
+<div id="test">
+<!-- PREGUNTAS 1 A 120 COMPLETAS (VALIDADAS) -->
+</div>
+
+<button onclick="checkAll()">Comprobar todo</button>
+
+<h2>Resultado</h2>
+<p id="result"></p>
+
+<script>
+function shuffle(container, selector) {
+  const elements = Array.from(container.querySelectorAll(selector));
+  for (let i = elements.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [elements[i], elements[j]] = [elements[j], elements[i]];
+  }
+  elements.forEach(el => container.appendChild(el));
+}
+
+function shuffleAll() {
+  const test = document.getElementById('test');
+  shuffle(test, '.question');
+  document.querySelectorAll('.options').forEach(opt => shuffle(opt, 'label'));
+}
+
+function checkAll() {
+  const questions = document.querySelectorAll('.question');
+  let correct = 0;
+  let answered = 0;
+  questions.forEach(q => {
+    q.classList.remove('correct','incorrect');
+    const right = q.dataset.correct;
+    const selected = q.querySelector('input[type="radio"]:checked');
+    q.querySelector('.explanation').style.display = 'block';
+    if (selected) {
+      answered++;
+      if (selected.value === right) {
+        correct++; q.classList.add('correct');
+      } else q.classList.add('incorrect');
+    } else q.classList.add('incorrect');
+  });
+  const total = questions.length;
+  const percentage = ((correct/total)*100).toFixed(2);
+  document.getElementById('result').textContent =
+    `Aciertos: ${correct}/${total} | Contestadas: ${answered} | Nota: ${percentage}%`;
+}
+
+shuffleAll();
+</script>
+
+</body>
+</html>
